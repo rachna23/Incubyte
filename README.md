@@ -37,25 +37,11 @@ puts calculator.add("//[;][|]\n1;2|3") # Output: 6
 
 puts calculator.add("1,2,-3") # Raises an error: Negative numbers not allowed: -3
 
-Test Cases
+**Test Cases**
 
 RSpec tests are provided to validate the functionality of the String Calculator.
 
-Running Tests
-
-rspec string_calculator_spec.rb
-
-Sample Tests
-
-it 'returns the sum of numbers separated by commas' do
-  expect(calculator.add("1,2,3")).to eq(6)
-end
-
-it 'raises an error for negative numbers' do
-  expect { calculator.add("-1,2,-3") }.to raise_error("Negative numbers not allowed: -1, -3")
-end
-
-Requirements
+**Requirements**
 
 Ruby Version: 2.7 or higher
 
